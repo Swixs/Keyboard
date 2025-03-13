@@ -18,6 +18,12 @@ const Keyboard = () => {
         <div className={`${styles.key} ${styles.green}`}>P</div>
         <div className={`${styles.key} ${styles.green}`}>[</div>
         <div className={`${styles.key} ${styles.green}`}>]</div>
+        <div
+          className={`${styles.key} ${styles.white}`}
+          style={{ width: "35px" }}
+        >
+          \
+        </div>
       </div>
       <div className={styles.row}>
         <div

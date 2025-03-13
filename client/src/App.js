@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
+import Race from "./pages/Race/Race";
 
 function App() {
   return (
@@ -17,13 +19,10 @@ function App() {
             <Route path="/authorization" element={<SignIn />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
-}
-
-function Race() {
-  return <h2>Race Page</h2>;
 }
 
 function Training() {
