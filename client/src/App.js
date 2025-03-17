@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Race from "./pages/Race/Race";
+import Training from "./pages/Training/Training";
 
 function App() {
   return (
@@ -23,10 +24,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Training() {
-  return <h2>Training Page</h2>;
 }
 
 function Levels() {
