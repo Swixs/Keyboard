@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
-import Keyboard from "../../components/Keyboard/keyboard";
 
 import funCat from "../../images/FunCat.jpg";
 import HeroSection from "./HeroSection";
@@ -10,6 +9,7 @@ import FingerMovement from "./FingerMovement";
 import PracticeButtons from "./PracticeButtons";
 import FAQSection from "./FAQSection";
 import KeyboardRow from "./KeyboardRow";
+import StaticKeyboard from "../../components/Keyboard/staticKeyboard";
 
 const Home = () => {
   return (
@@ -37,7 +37,7 @@ const Home = () => {
         keyboard blindly.
       </p>
 
-      <Keyboard />
+      <StaticKeyboard />
       <h2 className={styles.text} style={{ marginTop: 100 }}>
         The color of the keys on this keyboard will help you understand and
         remember which finger to press which key.

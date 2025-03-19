@@ -4,6 +4,8 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Race from "./pages/Race/Race";
 import Training from "./pages/Training/Training";
+import Levels from "./pages/Levels/Levels";
+import Level from "./pages/Levels/Level";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
             <Route path="/race" element={<Race />} />
             <Route path="/training" element={<Training />} />
             <Route path="/levels" element={<Levels />} />
+            <Route path="/level/:levelId" element={<Level />} />
             <Route path="/testing" element={<Testing />} />
             <Route path="/authorization" element={<SignIn />} />
           </Routes>
@@ -24,10 +27,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Levels() {
-  return <h2>Levels Page</h2>;
 }
 
 function Testing() {

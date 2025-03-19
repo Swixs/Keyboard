@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import sentences from "../../data/sentences.json";
 import styles from "../../styles/Race.module.css";
-import Keyboard from "../../components/Keyboard/keyboard";
+import StaticKeyboard from "../../components/Keyboard/staticKeyboard";
 
 const Race = () => {
   const [sentence, setSentence] = useState("");
@@ -138,7 +138,7 @@ const Race = () => {
               ))}
             </div>
           </div>
-          <Keyboard />
+          <StaticKeyboard />
           {isTimeUp && (
             <div className={styles.modal}>
               <div className={styles.modalContent}>
